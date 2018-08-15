@@ -12,6 +12,7 @@
 #include "../ClangTidyModuleRegistry.h"
 #include "../misc/UnconventionalAssignOperatorCheck.h"
 #include "../readability/MagicNumbersCheck.h"
+#include "AvoidAdjacentUnrelatedParametersOfTheSameTypeCheck.h"
 #include "AvoidGotoCheck.h"
 #include "InterfacesGlobalInitCheck.h"
 #include "NarrowingConversionsCheck.h"
@@ -38,6 +39,8 @@ namespace cppcoreguidelines {
 class CppCoreGuidelinesModule : public ClangTidyModule {
 public:
   void addCheckFactories(ClangTidyCheckFactories &CheckFactories) override {
+    CheckFactories.registerCheck<AvoidAdjacentUnrelatedParametersOfTheSameTypeCheck>(
+        "cppcoreguidelines-avoid-adjacent-unrelated-parameters-of-the-same-type");
     CheckFactories.registerCheck<AvoidGotoCheck>(
         "cppcoreguidelines-avoid-goto");
     CheckFactories.registerCheck<InterfacesGlobalInitCheck>(

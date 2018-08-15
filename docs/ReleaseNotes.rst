@@ -63,6 +63,13 @@ Improvements to clang-tidy
   Detects usage of magic numbers, numbers that are used as literals instead of
   introduced via constants or symbols.
 
+- New :doc:`cppcoreguidelines-avoid-adjacent-unrelated-parameters-of-the-same-type
+  <clang-tidy/checks/cppcoreguidelines-avoid-adjacent-unrelated-parameters-of-the-same-type>` check.
+
+  FIXME: add release notes.
+
+The improvements are...
+
 Improvements to include-fixer
 -----------------------------
 

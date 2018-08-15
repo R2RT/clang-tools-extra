@@ -78,6 +78,7 @@ Clang-Tidy Checks
    cert-msc50-cpp
    cert-msc51-cpp
    cert-oop11-cpp (redirects to performance-move-constructor-init) <cert-oop11-cpp>
+   cppcoreguidelines-avoid-adjacent-unrelated-parameters-of-the-same-type
    cppcoreguidelines-avoid-goto
    cppcoreguidelines-avoid-magic-numbers (redirects to readability-magic-numbers) <cppcoreguidelines-avoid-magic-numbers>
    cppcoreguidelines-c-copy-assignment-signature (redirects to misc-unconventional-assign-operator) <cppcoreguidelines-c-copy-assignment-signature>
